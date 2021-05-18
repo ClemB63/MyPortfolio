@@ -57,10 +57,7 @@ class Design extends Component {
 
   render() {
     return (
-      <div>
-        <h2><Trans>Graphisme et Maquettes</Trans></h2>
-        <p>Mauris sem velit, vehicula eget sodales vitae,
-        rhoncus eget sapien:</p>
+      <div className="cards-wrapper">
         <ul className="cards">
           <li className="cards__item">
             <div className="card">

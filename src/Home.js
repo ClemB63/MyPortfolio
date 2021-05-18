@@ -7,7 +7,7 @@ class Home extends Component {
   render() {
     return (
       <div className="home">
-        <h2 className="page-title"><Trans>Accueil</Trans></h2>
+        {/* <h2 className="page-title"><Trans>Accueil</Trans></h2> */}
         <div className="home-content">
           <div className="home-animation">
             <h3 className="typewriter-text--hello"><Trans>Bonjour</Trans></h3>
@@ -19,9 +19,9 @@ class Home extends Component {
             <h3 className="typewriter-text--qualities-3"><Trans>Polyvalente</Trans></h3>
             <h3 className="typewriter-text--conclusion"><Trans>Atout</Trans></h3>
           </div>
-          <div className="home-illustration">
+          {/* <div className="home-illustration">
           <img className="photo" src={illustration} alt="development" />
-          </div>
+          </div> */}
         </div>
       </div>
     );

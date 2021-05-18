@@ -2,7 +2,7 @@ import React from "react";
 import {NavLink,} from "react-router-dom";
 import DarkMode from "./DarkMode";
 import { useTranslation, Trans } from "react-i18next";
-import { slide as Menu } from "react-burger-menu";
+import { push as Menu } from "react-burger-menu";
 
 export default props => {
 

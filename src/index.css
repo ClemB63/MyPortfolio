@@ -38,39 +38,42 @@ body {
 
   .main-container {
     display: flex;
+    flex-direction: column;
   }
   .navigation {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-    flex: 20%;
-    height: auto;
-    background : linear-gradient(180deg, rgba(238,103,143,1) 30%, rgb(0, 211, 158) 80%);
+    width: 100%;
+    height: 15vh;
+    /* flex: 20%; */
+    background-color : rgb(211, 20, 77);
     
   }
 
-  .content {
+  /* .content {
     flex:80%;
-  }
+  } */
 
   .active {
-    border-left: solid white 5px;
+    border-bottom: solid rgb(0, 211, 158) 5px;
     box-sizing: border-box;
   }
 
   .nav-list {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     padding: 0;
-    height: 100vh;
+    width: 100%;
+    
   }
 
   .nav-links {
     list-style-type: none;
-    margin: 0;
-    font-family: 'Press Start 2P', sans-serif;
+    margin-right: 2em;
+    font-family: 'Montserrat', sans-serif;
     font-size: 1.5em;
     background-color: transparent;
     padding: 0.5em;
@@ -78,7 +81,7 @@ body {
   }
   
   .nav-sublinks {
-    font-family: 'Press Start 2P', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     list-style-type: none;
     font-size: 1em;
   }
@@ -161,6 +164,13 @@ body {
 .btn--block {
   display: block;
   width: 100%;
+}
+
+.cards-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
  
 .cards {
@@ -310,8 +320,8 @@ body {
 .home-content {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  /* align-items: center; */
+  /* justify-content: center; */
+  align-items: center;
   margin-top: 5em;
   margin-left: 2em;
   margin-right: 2em;
@@ -319,7 +329,7 @@ body {
 
 .home-illustration {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   height: 50vh;
 }
@@ -341,9 +351,10 @@ body {
   position: relative;
   width: auto;
   border-right: 3px solid transparent;
-  font-size: 20px;
-  font-family: 'Press Start 2P', sans-serif;
+  font-size: 55px;
+  font-family: 'Montserrat', sans-serif;
   white-space: nowrap;
+  margin: 0;
 
   animation: typewriter 2s steps(60) 1s 1 normal both,
   blinkTextCursor 700ms steps(60) 2 normal;
@@ -355,9 +366,10 @@ body {
   position: relative;
   width: auto;
   border-right: 3px solid transparent;
-  font-size: 20px;
-  font-family: 'Press Start 2P', sans-serif;
+  font-size: 55px;
+  font-family: 'Montserrat', sans-serif;
   white-space: nowrap;
+  margin: 0;
 
   animation: typewriter 2s steps(60) 3s 1 normal both,
   blinkTextCursor 700ms steps(60) 2s 3 normal;
@@ -369,9 +381,10 @@ body {
   position: relative;
   width: auto;
   border-right: 3px solid transparent;
-  font-size: 20px;
-  font-family: 'Press Start 2P', sans-serif;
+  font-size: 55px;
+  font-family: 'Montserrat', sans-serif;
   white-space: nowrap;
+  margin: 0;
 
   animation: typewriter 2s steps(60) 5s 1 normal both,
   blinkTextCursor 700ms steps(60) 4s 3 normal;
@@ -383,9 +396,10 @@ body {
   position: relative;
   width: auto;
   border-right: 3px solid transparent;
-  font-size: 20px;
-  font-family: 'Press Start 2P', sans-serif;
+  font-size: 55px;
+  font-family: 'Montserrat', sans-serif;
   white-space: nowrap;
+  margin: 0;
 
   animation: typewriter 2s steps(60) 7s 1 normal both,
   blinkTextCursor 700ms steps(60) 6s 2.5 normal;
@@ -397,9 +411,10 @@ body {
   position: relative;
   width: auto;
   border-right: 3px solid transparent;
-  font-size: 20px;
-  font-family: 'Press Start 2P', sans-serif;
+  font-size: 55px;
+  font-family: 'Montserrat', sans-serif;
   white-space: nowrap;
+  margin: 0;
 
   animation: typewriter 2s steps(60) 9s 1 normal both,
   blinkTextCursor 700ms steps(60) 8s 3 normal;
@@ -411,9 +426,10 @@ body {
   position: relative;
   width: auto;
   border-right: 3px solid transparent;
-  font-size: 20px;
-  font-family: 'Press Start 2P', sans-serif;
+  font-size: 55px;
+  font-family: 'Montserrat', sans-serif;
   white-space: nowrap;
+  margin: 0;
 
   animation: typewriter 2s steps(60) 11s 1 normal both,
   blinkTextCursor 700ms steps(60) 10s 3 normal;
@@ -425,9 +441,10 @@ body {
   position: relative;
   width: auto;
   border-right: 3px solid transparent;
-  font-size: 20px;
-  font-family: 'Press Start 2P', sans-serif;
+  font-size: 55px;
+  font-family: 'Montserrat', sans-serif;
   white-space: nowrap;
+  margin: 0;
 
   animation: typewriter 2s steps(60) 13s 1 normal both,
   blinkTextCursor 700ms steps(60) 12s 3 normal;
@@ -440,9 +457,10 @@ body {
   width: auto;
   color:rgba(238,103,143,1);
   border-right: 3px solid transparent;
-  font-size: 30px;
-  font-family: 'Press Start 2P', sans-serif;
+  font-size: 55px;
+  font-family: 'Montserrat', sans-serif;
   white-space: nowrap;
+  margin: 0;
 
   animation: typewriter 2s steps(60) 15s 1 normal both,
   blinkTextCursor 700ms steps(60) 14s 3 normal;
@@ -503,6 +521,49 @@ body {
   .bm-container {
     display: none;
   }
+
+  .nav-list {
+    margin-left: 20em;
+  }
+
+  .nav-choice {
+    font-size: 20px;
+  }
+
+  .icon {
+    color: rgba(0, 211, 158, 0.75);
+    margin-left: 0.5em;
+  }
+
+  .nav-links a {
+    padding: 10px;
+  }
+
+  .nav-sublist {
+    display: none;
+  }
+
+  .nav-sublist--projets {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    justify-content: center;
+    padding:0;
+    
+  }
+
+  .nav-sublist--projets a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 40px;
+  }
+
+  .nav-options {
+    flex-direction: row;
+    margin-left: 20em;
+  }
+
 }
 @media only screen and (max-width: 780px) {
 
@@ -510,8 +571,18 @@ body {
     display: none;
   }
 
+  .nav-sublist--projets {
+    display:none;
+  }
+
+  .active {
+    border-left: solid white 5px;
+    border-bottom: none;
+    box-sizing: border-box;
+  }
+
     #page-wrap {
-    text-align: center;
+    /* text-align: center; */
     overflow: auto;
     top: 45%;
     position: relative;
@@ -542,6 +613,7 @@ body {
   /* Color/shape of burger icon bars */
   .bm-burger-bars {
     background: rgb(0, 211, 158);
+    width: 30px;
   }
 
   /* Position and sizing of clickable cross button */
@@ -577,28 +649,29 @@ body {
     background: rgba(0, 0, 0, 0.3);
   }
 
-  .page-title {
+  /* .page-title {
     font-family: 'Press Start 2P', sans-serif;
     font-size: 2em;
     margin-top: 3em;
     margin-bottom: 1em;
     color: rgb(0, 211, 158);
     text-align: center;
-  }
+  } */
 
-  .home-animation {
+  /* .home-animation {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
   }
+
   .typewriter-text--hello {
     overflow: hidden;
     position: relative;
     width: auto;
     border-right: 3px solid transparent;
-    font-size: 20px;
+    font-size: 30px;
     font-family: 'Press Start 2P', sans-serif;
     white-space: nowrap;
   
@@ -648,7 +721,7 @@ body {
   */
   
   
-  @keyframes typewriter {
+  /* @keyframes typewriter {
     from {
       width: 0;
     }
@@ -668,7 +741,7 @@ body {
       border-right-color: transparent;
     }
   
-  }
+  }  */
 
 }
  
