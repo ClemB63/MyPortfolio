@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Press+Start+2P&display=swap');
+
+
+/*-------------------------------------------------------------------------------------------------------------
+----------------------------------------------BODY - DARKMODE--------------------------------------------------
+--------------------------------------------------------------------------------------------------------------*/
+:root {
+  --black: rgb(36, 36, 36);
+  --white: rgb(255, 255, 255);
+  --colored: linear-gradient(180deg, rgba(238,103,143,1) 30%, rgb(0, 211, 158) 80%);
+}
+
+body.light {
+  --background-color: var(--white);
+  --text-color: var(--black);
+  --font-weight: 400;
+}
+
+body.dark {
+  --background-color: var(--black);
+  --text-color: var(--white);
+  --font-weight: 500;
+}
+
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: var(--background-color);
+    color: var(--text-color);
+    font-weight: var(--font-weight);
+    transition: background 0.3s ease-in-out, color 0.6s ease-in-out;
+  }
+
+  /*-------------------------------------------------------------------------------------------------------------
+---------------------------------------------------PAGE - NAV----------------------------------------------------
+----------------------------------------------------------------------------------------------------------------*/
+
+  .main-container {
+    display: flex;
+  }
+  .navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 20%;
+    height: auto;
+    background : linear-gradient(180deg, rgba(238,103,143,1) 30%, rgb(0, 211, 158) 80%);
+    
+  }
+
+  .content {
+    flex:80%;
+  }
+
+  .active {
+    border-left: solid white 5px;
+    box-sizing: border-box;
+  }
+
+  .nav-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+    height: 100vh;
+  }
+
+  .nav-links {
+    list-style-type: none;
+    margin: 0;
+    font-family: 'Press Start 2P', sans-serif;
+    font-size: 1.5em;
+    background-color: transparent;
+    padding: 0.5em;
+    transition: all 2s ease;
+  }
+  
+  .nav-sublinks {
+    font-family: 'Press Start 2P', sans-serif;
+    list-style-type: none;
+    font-size: 1em;
+  }
+
+  .nav-links a, .nav-sublinks a {
+    color: #FFF;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 20px;
+    display: inline-block;
+  }
+
+  .nav-options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .content {
+    padding: 20px;
+  }
+
+  .content li {
+    margin-bottom: 10px;
+  }
+  
+
+  .langSelect {
+      display : flex;
+  }
+
+  .langBtn {
+      cursor:pointer;
+      color:white;
+      font-family: 'Press Start 2P', sans-serif;
+      font-weight: 600;
+      text-transform: uppercase;
+      border:none;
+  }
+
+  button {
+    background-color: transparent;
+  }
+
+  .page-title {
+    font-family: 'Press Start 2P', sans-serif;
+    font-size: 3em;
+    margin-bottom: 1em;
+    color: rgb(0, 211, 158);
+    text-align: center;
+  }
+
+
+/*-------------------------------------------------------------------------------------------------------------
+--------------------------------------------------CARDS--------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------*/
+
+*,
+*::before,
+*::after { 
+  box-sizing: border-box;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.btn {
+  background-color: white;
+  border: 1px solid #cccccc;
+  border-radius: 1rem;
+  color: #696969;
+  padding: 0.5rem;
+  text-transform: lowercase;
+}
+
+.btn--block {
+  display: block;
+  width: 100%;
+}
+ 
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cards__item {
+  display: flex;
+  padding: 1rem;
+}
+
+.card {
+  /* background-color: white; */
+  width: 20em;
+  height: 25em;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0,0,0,0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.card--modal {
+  background-color: white;
+  width: 25em;
+  height: 25em;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0,0,0,0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.card__content {
+  background : linear-gradient(180deg, rgba(238,103,143,1) 30%, rgb(0, 0, 0) 80%);
+  display: flex;
+  min-height: 15em;
+  max-height: 15em;
+  flex: 1 1 auto;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.card__content--design {
+  background : linear-gradient(180deg, rgba(238,103,143,1) 30%, rgb(0, 211, 158) 80%);
+  display: flex;
+  min-height: 10em;
+  max-height: 10em;
+  flex: 1 1 auto;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.card__image {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 20rem;
+  height: 20rem;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  filter: contrast(70%);
+  overflow: hidden;
+  position: relative;
+  transition: filter 0.5s cubic-bezier(.43,.41,.22,.91);;
+}
+
+.card__image--modal {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  filter: contrast(70%);
+  overflow: hidden;
+  position: relative;
+  transition: filter 0.5s cubic-bezier(.43,.41,.22,.91);;
+}
+
+.card_image ::before {
+  content: "";
+  display: block;
+  padding-top: 56.25%; /* 16:9 aspect ratio */
+}
+@media(min-width: 40rem) {
+  .card_image ::before {
+    padding-top: 66.6%; /* 3:2 aspect ratio*/
+  }
+}
+
+.card__image--flowers {
+  background-image: url(./images/Capture\ d’écran\ de\ 2021-05-10\ 17-34-24.png);
+}
+
+.card__image--river {
+  background-image: url(./images/Screenshot_2020-10-26\ Atom\ –\ Cafés\ et\ Thés\ Bios\ et\ Equitables.png);
+}
+
+.card__image--record {
+  background-image: url(./images/Screenshot_2020-10-26\ Battle\ Ships.png);
+}
+
+.card__image--fence {
+  background-image: url(https://unsplash.it/800/600?image=59);
+}
+
+.card__image--cv {
+  background-image: url(./images/477703_467072110034407_1706492476_o.jpg);
+}
+
+.card__image--logo {
+  background-image: url(./images/LOGO\ guerre\ des\ sexes.png);
+}
+
+.card__image--id {
+  background-image: url(./images/damon.png);
+}
+
+.card__image--edition {
+  background-image: url(./images/polt.png);
+}
+
+.card__title {
+  color: #696969;
+  font-size: 1.25rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.card__text {
+  flex: 1 1 auto;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+}
+
+/*-------------------------------------------------------------------------------------------------------------
+--------------------------------------------------MODAL--------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------*/
+
+.ReactModal__Content, .ReactModal__Content--after-open{
+  background-color: black;
+}
+
+
+/*-------------------------------------------------------------------------------------------------------------
+-----------------------------------------------MEDIA QUERIES---------------------------------------------------
+--------------------------------------------------------------------------------------------------------------*/
+
+
+
+@media only screen and (min-width: 780px) {
+  .bm-container {
+    display: none;
+  }
+}
+@media only screen and (max-width: 780px) {
+
+  .navigation {
+    display: none;
+  }
+
+    #page-wrap {
+    text-align: center;
+    overflow: auto;
+    top: 45%;
+    position: relative;
+  }
+
+  .bm-item {
+    display: inline-block;
+
+    /* Our sidebar item styling */
+    text-decoration: none;
+    margin-bottom: 10px;
+    color: #d1d1d1;
+    transition: color 0.2s;
+  }
+
+  .bm-item:hover {
+    color: white;
+  }
+
+  .bm-burger-button {
+    position: fixed;
+    width: 36px;
+    height: 30px;
+    right: 36px;
+    top: 36px;
+  }
+
+  /* Color/shape of burger icon bars */
+  .bm-burger-bars {
+    background: rgb(0, 211, 158);
+  }
+
+  /* Position and sizing of clickable cross button */
+  .bm-cross-button {
+    height: 24px;
+    width: 24px;
+  }
+
+  /* Color/shape of close button cross */
+  .bm-cross {
+    background: #bdc3c7;
+  }
+
+  /* General sidebar styles */
+  .bm-menu {
+    background : linear-gradient(180deg, rgba(238,103,143,1) 30%, rgb(0, 211, 158) 80%);
+    padding: 2.5em 1.5em 0;
+    font-size: 1.15em;
+  }
+
+  /* Morph shape necessary with bubble or elastic */
+  .bm-morph-shape {
+    fill: #373a47;
+  }
+
+  /* Wrapper for item list */
+  .bm-item-list {
+    color: #b8b7ad;
+  }
+
+  /* Styling of overlay */
+  .bm-overlay {
+    background: rgba(0, 0, 0, 0.3);
+  }
+
+  .page-title {
+    font-family: 'Press Start 2P', sans-serif;
+    font-size: 2em;
+    margin-top: 3em;
+    margin-bottom: 1em;
+    color: rgb(0, 211, 158);
+    text-align: center;
+  }
+
+}
+ 
