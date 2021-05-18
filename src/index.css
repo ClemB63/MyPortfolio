@@ -143,11 +143,11 @@ body {
   box-sizing: border-box;
 }
 
-img {
+/* img {
   height: auto;
   max-width: 100%;
   vertical-align: middle;
-}
+} */
 
 .btn {
   background-color: white;
@@ -199,7 +199,7 @@ img {
 }
 
 .card__content {
-  background : linear-gradient(180deg, rgba(238,103,143,1) 30%, rgb(0, 0, 0) 80%);
+  background : linear-gradient(180deg, rgba(238,103,143,1) 30%, rgb(0, 211, 158) 80%);
   display: flex;
   min-height: 15em;
   max-height: 15em;
@@ -305,6 +305,186 @@ img {
 }
 
 /*-------------------------------------------------------------------------------------------------------------
+--------------------------------------------------HOMEPAGE-----------------------------------------------------
+--------------------------------------------------------------------------------------------------------------*/
+.home-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* align-items: center; */
+  margin-top: 5em;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+.home-illustration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+.photo {
+  border-radius: 50%;
+  width: 25vw;
+  height: auto;
+}
+
+.home-animation {
+  display: flex;
+  flex-direction: column;
+  width: 35vw;
+
+}
+.typewriter-text--hello {
+  overflow: hidden;
+  position: relative;
+  width: auto;
+  border-right: 3px solid transparent;
+  font-size: 20px;
+  font-family: 'Press Start 2P', sans-serif;
+  white-space: nowrap;
+
+  animation: typewriter 2s steps(60) 1s 1 normal both,
+  blinkTextCursor 700ms steps(60) 2 normal;
+
+}
+
+.typewriter-text--name {
+  overflow: hidden;
+  position: relative;
+  width: auto;
+  border-right: 3px solid transparent;
+  font-size: 20px;
+  font-family: 'Press Start 2P', sans-serif;
+  white-space: nowrap;
+
+  animation: typewriter 2s steps(60) 3s 1 normal both,
+  blinkTextCursor 700ms steps(60) 2s 3 normal;
+
+}
+
+.typewriter-text--job {
+  overflow: hidden;
+  position: relative;
+  width: auto;
+  border-right: 3px solid transparent;
+  font-size: 20px;
+  font-family: 'Press Start 2P', sans-serif;
+  white-space: nowrap;
+
+  animation: typewriter 2s steps(60) 5s 1 normal both,
+  blinkTextCursor 700ms steps(60) 4s 3 normal;
+
+}
+
+.typewriter-text--job-2 {
+  overflow: hidden;
+  position: relative;
+  width: auto;
+  border-right: 3px solid transparent;
+  font-size: 20px;
+  font-family: 'Press Start 2P', sans-serif;
+  white-space: nowrap;
+
+  animation: typewriter 2s steps(60) 7s 1 normal both,
+  blinkTextCursor 700ms steps(60) 6s 2.5 normal;
+
+}
+
+.typewriter-text--qualities {
+  overflow: hidden;
+  position: relative;
+  width: auto;
+  border-right: 3px solid transparent;
+  font-size: 20px;
+  font-family: 'Press Start 2P', sans-serif;
+  white-space: nowrap;
+
+  animation: typewriter 2s steps(60) 9s 1 normal both,
+  blinkTextCursor 700ms steps(60) 8s 3 normal;
+
+}
+
+.typewriter-text--qualities-2 {
+  overflow: hidden;
+  position: relative;
+  width: auto;
+  border-right: 3px solid transparent;
+  font-size: 20px;
+  font-family: 'Press Start 2P', sans-serif;
+  white-space: nowrap;
+
+  animation: typewriter 2s steps(60) 11s 1 normal both,
+  blinkTextCursor 700ms steps(60) 10s 3 normal;
+
+}
+
+.typewriter-text--qualities-3 {
+  overflow: hidden;
+  position: relative;
+  width: auto;
+  border-right: 3px solid transparent;
+  font-size: 20px;
+  font-family: 'Press Start 2P', sans-serif;
+  white-space: nowrap;
+
+  animation: typewriter 2s steps(60) 13s 1 normal both,
+  blinkTextCursor 700ms steps(60) 12s 3 normal;
+
+}
+
+.typewriter-text--conclusion {
+  overflow: hidden;
+  position: relative;
+  width: auto;
+  color:rgba(238,103,143,1);
+  border-right: 3px solid transparent;
+  font-size: 30px;
+  font-family: 'Press Start 2P', sans-serif;
+  white-space: nowrap;
+
+  animation: typewriter 2s steps(60) 15s 1 normal both,
+  blinkTextCursor 700ms steps(60) 14s 3 normal;
+
+}
+
+/*
+
+  animation-name: typewriter;
+  animation-duration: 6s;
+  animation-timing-function: steps(60);
+  animation-delay: 1s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: both;
+
+*/
+
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 45vw;
+  }
+}
+
+@keyframes blinkTextCursor {
+
+  from {
+    border-right-color: rgba(0, 211, 158, 0.75);
+  }
+
+  to {
+    border-right-color: transparent;
+  }
+
+}
+
+/*-------------------------------------------------------------------------------------------------------------
 --------------------------------------------------MODAL--------------------------------------------------------
 --------------------------------------------------------------------------------------------------------------*/
 
@@ -404,6 +584,90 @@ img {
     margin-bottom: 1em;
     color: rgb(0, 211, 158);
     text-align: center;
+  }
+
+  .home-animation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .typewriter-text--hello {
+    overflow: hidden;
+    position: relative;
+    width: auto;
+    border-right: 3px solid transparent;
+    font-size: 20px;
+    font-family: 'Press Start 2P', sans-serif;
+    white-space: nowrap;
+  
+    animation: typewriter 3s steps(60) 1s 1 normal both,
+    blinkTextCursor 700ms steps(60) 3 normal;
+  
+  }
+  
+  .typewriter-text--name {
+    overflow: hidden;
+    position: relative;
+    width: auto;
+    border-right: 3px solid transparent;
+    font-size: 20px;
+    font-family: 'Press Start 2P', sans-serif;
+    white-space: nowrap;
+  
+    animation: typewriter 3s steps(60) 4s 1 normal both,
+    blinkTextCursor 700ms steps(60) 3s 4 normal;
+  
+  }
+  
+  .typewriter-text--job {
+    overflow: hidden;
+    position: relative;
+    width: auto;
+    border-right: 3px solid transparent;
+    font-size: 20px;
+    font-family: 'Press Start 2P', sans-serif;
+    white-space: nowrap;
+  
+    animation: typewriter 3s steps(60) 8s 1 normal both,
+    blinkTextCursor 700ms steps(60) 7s 5 normal;
+  
+  }
+  
+  /*
+  
+    animation-name: typewriter;
+    animation-duration: 6s;
+    animation-timing-function: steps(60);
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: both;
+  
+  */
+  
+  
+  @keyframes typewriter {
+    from {
+      width: 0;
+    }
+  
+    to {
+      width: 90vw;
+    }
+  }
+  
+  @keyframes blinkTextCursor {
+  
+    from {
+      border-right-color: rgba(0, 211, 158, 0.75);
+    }
+  
+    to {
+      border-right-color: transparent;
+    }
+  
   }
 
 }

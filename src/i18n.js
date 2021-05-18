@@ -17,6 +17,14 @@ i18n
           Graphisme:"Design",
           Web: "Web",
           Contact:"Contact",
+          Bonjour: "Hello !",
+          Nom: "I'm Clémence.",
+          Design: "I love Design.",
+          Code: "I love Coding.",
+          Creative: "I am Creative...",
+          Curieuse: "I am Curious...",
+          Polyvalente: "And I am Versatile.",
+          Atout: "I am Your New Asset!",
           // "Projets":"Work",
           "Bienvenue sur notre Blog":"Welcome to our Blog"
           
@@ -29,6 +37,14 @@ i18n
           Graphisme:"Graphisme",
           Web: "Web",
           Contact:"Contact",
+          Bonjour: "Bonjour !",
+          Nom: "Je suis Clémence.",
+          Design: "J'aime le Design.",
+          Code: "J'aime le Code.",
+          Creative: "Je suis Créative...",
+          Curieuse: "Je suis Curieuse...",
+          Polyvalente: "Et je suis Polyvalente.",
+          Atout: "Je suis Votre Nouvel Atout!",
           // "Projets":"Projets",
           "Bienvenue sur notre Blog":"Bienvenue sur notre Blog"
         }
